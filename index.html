@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Time</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+	<div class="stopwatch clock">
+		<h2 class="title">Current Time:</h2>
+		<div class="watch">
+			<div class="time time__watch hours">00</div>
+			<div class="colon">:</div>
+			<div class="time minutes time__watch">00</div>
+			<div class="colon">:</div>
+			<div class="time seconds time__watch">00</div>
+		</div>
+	</div>
+	<div class="timer clock">
+		<h2 class="title">Timer</h2>
+		<div class="watch">
+			<div class="time timer-hours counter">00</div>
+			<div class="colon">:</div>
+			<div class="time timer-minutes counter">00</div>
+			<div class="colon">:</div>
+			<div class="time timer-seconds counter">00</div>
+		</div>
+		<form class="time-determiner">
+			<input class="input input__hours" type="text" name="hours" placeholder="hours">
+			<input class="input input__minutes" type="text" maxlength ="2"  name="minutes" placeholder="minutes">
+			<input class="input input__seconds" type="text" maxlength ="2"  name="seconds" placeholder="seconds">
+			<button class="time-determiner__set">Set</button>
+		</form>
+	</div>
+<script src="script.js"></script>
+</body>
+</html>

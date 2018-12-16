@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@keyframes alert {
+	0% {
+		background: white;
+	}
+
+	50% {
+		background: #e86873;
+	}
+	100% {
+		background: #ad1320;
+	}
+}
+
+body{
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: space-around;
+}
+.timer, .stopwatch {
+	max-width: 350px;
+}
+.alert{
+	animation: alert 5s forwards linear;
+}
+
+.watch {
+	margin: 20px 0 0 5%;
+	width: 90%;
+	height: 100px;
+	overflow-y: auto;
+	border: 1px solid gray;
+	border-radius: 10px;
+	display: flex;
+	justify-content: center;
+}
+
+.clock {
+	padding: 10px;
+	margin: 20px 0 0 0;
+	width: 350px;
+	height: 300px;
+	border: 1px solid gray;
+	border-radius:5%;
+	box-shadow: 2px 2px 5px gray;
+}
+.time {
+	display: flex;
+	align-items: center;
+}
+.time, .colon {
+	font-size: 5em;
+	/*font-family: 'Open Sans', sans-serif;*/
+}
+.time-determiner {
+	margin: 20px 0 0 0;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+
+.input {
+	width: 30%;
+	height: 25px;
+	border-radius: 5px;
+	text-align: center;
+	border: 1px solid black;
+	outline: none;
+	background: inherit;
+	font-family: 'Open Sans', sans-serif;
+}
+.time-determiner__set {
+	margin: 20px 0 0 0;
+	border: 1px solid black;
+	outline: none;
+	border-radius: 5px;
+	background: none;
+	height: 40px;
+	width: 100px;
+	cursor: pointer;
+}
+
+.title {
+	margin: 0 0 0 20px;
+	font-family: 'Open Sans', sans-serif;
+
+}
